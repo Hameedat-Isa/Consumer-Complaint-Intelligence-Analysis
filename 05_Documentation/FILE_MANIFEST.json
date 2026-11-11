@@ -1,0 +1,358 @@
+{
+  "project": "Consumer Complaint Trends and Response Intelligence Platform",
+  "version": "2.0 independent reanalysis",
+  "file_count_excluding_manifest": 70,
+  "scope": "Bank of America CFPB complaint records, 2017-05-01 to 2023-08-28",
+  "files": [
+    {
+      "path": "01_Report/Consumer_Complaint_Intelligence_Report.docx",
+      "bytes": 1136616,
+      "sha256": "3d81827d3c3ea070f3393b8e340881b65a4558e5de67350fc8b32ed037ddd68c"
+    },
+    {
+      "path": "01_Report/Consumer_Complaint_Intelligence_Report.pdf",
+      "bytes": 1275568,
+      "sha256": "d51d6bce1a910cb8296fe3edd7c8c09112cf290a617575562ca000dd69392e89"
+    },
+    {
+      "path": "02_Dashboard/Consumer_Complaint__Intelligence.pbip",
+      "bytes": 311,
+      "sha256": "11c528a2bf3967decbf76de73b307cb7b3a8b04c544bee104cc45c59a6f05e7d"
+    },
+    {
+      "path": "02_Dashboard/Interactive_Complaint_Dashboard.html",
+      "bytes": 1766972,
+      "sha256": "ff315497d82c87be511c37d2d3c323900adc5f93cae96a3d6f26e315c9309670"
+    },
+    {
+      "path": "02_Dashboard/Submitted_PowerBI_Dashboard.pdf",
+      "bytes": 718179,
+      "sha256": "956452f66f272eaddd4a221776a015b1c61b9605419029318a97a8f9b7be1977"
+    },
+    {
+      "path": "03_Data/Annual_Complaint_Volume.csv",
+      "bytes": 173,
+      "sha256": "d1af0b910b5a70b0683073f3908bbea3a4a15fb051c1aa7b366ef202a2f4e733"
+    },
+    {
+      "path": "03_Data/Complaint_Growth_Drivers_2019_2022.csv",
+      "bytes": 534,
+      "sha256": "ed26cdb5dff74b3b9d799e39999efa278cb51bbf12c52c77849a0c854270bc15"
+    },
+    {
+      "path": "03_Data/Consumer_Complaints_Cleaned.csv",
+      "bytes": 19385644,
+      "sha256": "4a88fdc08d055e944b6894fa15d8c9e6806c35f89de6678015708cb0d5488e3e"
+    },
+    {
+      "path": "03_Data/Forwarding_Interval_Distribution.csv",
+      "bytes": 699,
+      "sha256": "3abe58dd2982cffc0f9ec451c6978f1dbd1fee849c3cc24140d67ba100315863"
+    },
+    {
+      "path": "03_Data/Issue_Complaint_Volume.csv",
+      "bytes": 3062,
+      "sha256": "7e710e00785c213575ba13755169bb470ece4f58c276cb4655cc3db30d4d3258"
+    },
+    {
+      "path": "03_Data/Monthly_Complaint_Volume.csv",
+      "bytes": 1259,
+      "sha256": "9750d633cce8239816f35c10275d66ec66ba9c34f3b64eebc77e35e8aacdd28d"
+    },
+    {
+      "path": "03_Data/Product_Complaint_Volume.csv",
+      "bytes": 442,
+      "sha256": "0fc3ef8cc34f5596c83cac306435b1696ed3f3650364aa3a6109a636d599caab"
+    },
+    {
+      "path": "03_Data/Product_Issue_CrossTab.csv",
+      "bytes": 8881,
+      "sha256": "1a4e1d9d9bd1428bcd7ac2fc6e0ede8e8e1ed651ad6ee7b7a782247df83611cc"
+    },
+    {
+      "path": "03_Data/Product_Issue_Top_30.csv",
+      "bytes": 2408,
+      "sha256": "29495c13cda07d569fe21c08e99943bee3e7cd31d07848f843f3b5c120ca28bb"
+    },
+    {
+      "path": "03_Data/Product_Timeliness.csv",
+      "bytes": 588,
+      "sha256": "2163c2f1d7e57eb8bb1029822b175d807a5356e3f51b521ba58f04693ed866cc"
+    },
+    {
+      "path": "03_Data/Response_Distribution.csv",
+      "bytes": 165,
+      "sha256": "f3fd3f4e44b32b07e4bba746732bb13a2734ac4696943ebef454b9608d9f82bb"
+    },
+    {
+      "path": "03_Data/Response_Year.csv",
+      "bytes": 1090,
+      "sha256": "aff970f85ccf49a9b7d1abcce8d5d685934fa526aa04c1bce58f92154f1d632a"
+    },
+    {
+      "path": "03_Data/Subissue_Complaint_Volume.csv",
+      "bytes": 7365,
+      "sha256": "04b1765aba92480d886e520f5f2a950b1dbbf490868dd39ef0b4975d18e5891c"
+    },
+    {
+      "path": "03_Data/Timeliness_by_Month.csv",
+      "bytes": 2366,
+      "sha256": "a18f77fdf636d5c3dfd72f465a04facfa6f6e42b3485e08891db1bffea6dac8b"
+    },
+    {
+      "path": "03_Data/Timeliness_by_Year.csv",
+      "bytes": 277,
+      "sha256": "306ac3a05fe049525442e81f1de652c78df5e785e1de49de08cfbd1b79cfbda2"
+    },
+    {
+      "path": "03_Data/Top_30_Long_Forwarding_Intervals.csv",
+      "bytes": 1800,
+      "sha256": "69988074641d05021ce4af240b64618bead96224d65b12b0d52f37ec51ff93fd"
+    },
+    {
+      "path": "04_Analysis/KPI_Measures.dax",
+      "bytes": 3077,
+      "sha256": "28392511d9656ac243eabc68c5982a92eed21585f7c6f5b71351d5cf8f57e8a1"
+    },
+    {
+      "path": "04_Analysis/PowerBI_Data_Quality_Checks.pq",
+      "bytes": 2734,
+      "sha256": "a63e5e0ec44bf9e841c508b7ae3e2205e93a33c1853a3d23f529f3cc3908699f"
+    },
+    {
+      "path": "04_Analysis/PowerBI_M_Cleaning.pq",
+      "bytes": 3175,
+      "sha256": "b0e0e20a44f0abbb58ce1b2c461bab9fdef5dd884c4309d877ad2bef9bdefe0a"
+    },
+    {
+      "path": "04_Analysis/analysis_queries.sql",
+      "bytes": 2673,
+      "sha256": "549c6f5c37065c8e20518ee4a3e0fafb7da0e93f3e50f9876bced9193b1419b3"
+    },
+    {
+      "path": "04_Analysis/build_interactive_dashboard.py",
+      "bytes": 20984,
+      "sha256": "9966e593db38b851b6ebe89e228df67d5e36b2bd6246335e0a990a028a2f9118"
+    },
+    {
+      "path": "04_Analysis/build_presentation_enhanced.py",
+      "bytes": 7772,
+      "sha256": "4bd5b2098bd20872be4ed6d7b37921bb0d95d6d4146c1cf56b73b9f9fa90e80c"
+    },
+    {
+      "path": "04_Analysis/build_report_enhanced.py",
+      "bytes": 39152,
+      "sha256": "3bed380de2e25f4908d6f0ba743e98b05d511760522454e3913bc42084fe48b2"
+    },
+    {
+      "path": "04_Analysis/extended_insights.py",
+      "bytes": 6903,
+      "sha256": "473646969d965806a5970f91f2900568612b0a349a2630289534cd3d8f541e2e"
+    },
+    {
+      "path": "04_Analysis/prepare_and_validate.py",
+      "bytes": 12763,
+      "sha256": "730991a2eb1bf48e4afb96677810b0d08b1831a4cdbc98e2ff58a40ec14403ee"
+    },
+    {
+      "path": "04_Analysis/test_interactive_dashboard.js",
+      "bytes": 1420,
+      "sha256": "d400acdaf2be8079e1d15a31c07f08c6342d6e83c371b9bdf85240f02846c3d2"
+    },
+    {
+      "path": "04_Analysis/test_reconciliation.py",
+      "bytes": 2006,
+      "sha256": "40fd2554fe48b4fb2e202dfa21185bd5d4a63cfb10304f07c3ef78dae32d6ba7"
+    },
+    {
+      "path": "05_Documentation/COLLABORATION_AND_INTEGRATION.md",
+      "bytes": 3003,
+      "sha256": "cf198f28f38a6633221e5463218093fe77a67d7e36b64aa1e48ae66b85dc88e5"
+    },
+    {
+      "path": "05_Documentation/DASHBOARD_AUDIT.md",
+      "bytes": 3216,
+      "sha256": "8a95efe6becd7670748f3e2b53cdb3666263ecc25e5ecf8bf050de02ed82337d"
+    },
+    {
+      "path": "05_Documentation/DATA_QUALITY_AND_TESTING.md",
+      "bytes": 7011,
+      "sha256": "76b720722fb8eb5e53e509cb87d1e28c5866129bae3b31678358743e1f6bffe5"
+    },
+    {
+      "path": "05_Documentation/INDEPENDENT_FINDINGS_AND_RECOMMENDATIONS.md",
+      "bytes": 6281,
+      "sha256": "809ea97311461f9122360edb93a789afc6c835cb3650d63626ea2179d330744f"
+    },
+    {
+      "path": "05_Documentation/KPI_DICTIONARY.md",
+      "bytes": 3022,
+      "sha256": "26685303af8de45224720288b0332f037a670a42cfe506986e9560b1d553d396"
+    },
+    {
+      "path": "05_Documentation/POWER_BI_REBUILD_GUIDE.md",
+      "bytes": 5276,
+      "sha256": "a35eaae22082e1a324f0db7ef6ba468ac1c34619bf352db5221b41a393c2d5dd"
+    },
+    {
+      "path": "05_Documentation/PROJECT_SCHEDULE.md",
+      "bytes": 1876,
+      "sha256": "fe5e6fb0d9e695a8c2ca5eac586026f3e4be2c46ace98e2303cc319193cc178b"
+    },
+    {
+      "path": "05_Documentation/README.md",
+      "bytes": 7750,
+      "sha256": "ad857faebd2d6a7a19bfe88e983d8ee65814f61ef144106f0f678edcf40dc2ba"
+    },
+    {
+      "path": "05_Documentation/REVISION_LOG_AND_FEEDBACK.md",
+      "bytes": 1464,
+      "sha256": "76b79e39fa701c804219aff273dfde7d432fa6e390b7f31cd826aca3c7263b7c"
+    },
+    {
+      "path": "05_Documentation/SOCIAL_POST_DRAFTS.md",
+      "bytes": 1573,
+      "sha256": "07bcdd29fd6d9eb4d0be48e73fd335f2fe63ec179e3dc8b574cd5b4a2f6b4f72"
+    },
+    {
+      "path": "05_Documentation/SOURCE_PROVENANCE.md",
+      "bytes": 753,
+      "sha256": "fae1b6dd86e02d395d0e01e5152461f0c4fe490117d8f6012481032313705a2b"
+    },
+    {
+      "path": "05_Documentation/SUBMISSION_CHECKLIST.md",
+      "bytes": 2654,
+      "sha256": "24bfe64102e79556a359490b58e692bfecb8bf6b2a78006e6a18edb36720a819"
+    },
+    {
+      "path": "06_Presentation/Consumer_Complaint_Week4_Presentation.pdf",
+      "bytes": 561255,
+      "sha256": "9c9b50ca7cc71e814b95ca3bff91bb7e2a295458e10375b5671804d6fe23ea60"
+    },
+    {
+      "path": "06_Presentation/Consumer_Complaint_Week4_Presentation.pptx",
+      "bytes": 406076,
+      "sha256": "a63de868f010209ed3213a24822d9c7160a51301a767145234acd9dcffbb2800"
+    },
+    {
+      "path": "06_Presentation/Individual_Presentation_Script.md",
+      "bytes": 5250,
+      "sha256": "3b360ec882a806bfb236463ca4984d92d65164c2d7dc11aa27f578d265671963"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/annual_volume.png",
+      "bytes": 64780,
+      "sha256": "492846d90422cb1980c6a0ca03aeea52c67a9ede8ccb729f401e7ac97a3278fd"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_2021_timeliness.png",
+      "bytes": 65532,
+      "sha256": "bdf7f9b900cc25b6cf59efdb5960650238148eb28df754f5255bc7549fce88a6"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_2023_inprogress.png",
+      "bytes": 56122,
+      "sha256": "51df7085382619e71f70b42c72687be5549011c3c5af8841e0db43cf9f08d1f3"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_annual_volume.png",
+      "bytes": 53761,
+      "sha256": "d84b94c9ecf8bf1a7c7c2d38ce2e0597e49c7c1f47b92e5ea9aa05ff6f5879d9"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_forwarding_bands.png",
+      "bytes": 47590,
+      "sha256": "d9cd3e31ce62fcc8842d1bb160707ab1babb3bcc817c54e6d0f6fde04e59c02c"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_forwarding_by_product.png",
+      "bytes": 83170,
+      "sha256": "f344b78f35a15f42c75627be74c83588da5846a2bc6e92e7def9c49403d64212"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_growth_drivers.png",
+      "bytes": 68405,
+      "sha256": "19b094afb7ca8dddb7349fdc6121780e2a96ab376882ba9d2e8b5b7b8921a0d0"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_products.png",
+      "bytes": 68844,
+      "sha256": "9679157453a0bb80a096d486bf1c1430aeb14d25d2339bc8267c096a19609a54"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_response_types.png",
+      "bytes": 50523,
+      "sha256": "5b835b3c54c8a54fe4a09a253dd6546e61404e354533a4216bef8130e5074cce"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/enhanced_timeliness_by_year.png",
+      "bytes": 63126,
+      "sha256": "4fc093b877bfd70fea625b965eafaf4f982751eae3096681a65755ecbb7321ec"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/forwarding_interval.png",
+      "bytes": 52163,
+      "sha256": "dfd8a62db7255ecf35760e590381e09a23f7c6149a420ff2784e6ccbcfd3594e"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/monthly_trend.png",
+      "bytes": 73077,
+      "sha256": "e8d71769cb54fc1cb86945ba721dad1db83cc7a2049d16cf2765e40719307849"
+    },
+    {
+      "path": "07_Evidence/Analytical_Figures/products.png",
+      "bytes": 75174,
+      "sha256": "32de5aeedbecd21654f2ca8ee8478213014ada44048b7dfe9d2d7664f51e5ccb"
+    },
+    {
+      "path": "07_Evidence/Dashboard_Screenshots/page-1.png",
+      "bytes": 154219,
+      "sha256": "4d84b0262f448d1ea8f713678d371de7f7deb314770b2e2363f29cc5d8e87269"
+    },
+    {
+      "path": "07_Evidence/Dashboard_Screenshots/page-2.png",
+      "bytes": 172323,
+      "sha256": "ee2adbd49749f8fd6f067bb97a67d49fc237013d977a53abac2a3787840d9633"
+    },
+    {
+      "path": "07_Evidence/Dashboard_Screenshots/page-3.png",
+      "bytes": 122476,
+      "sha256": "6f48239f249b6b0dae69b7c70481c8446bff8b4e1384d25a067eeec578a1602c"
+    },
+    {
+      "path": "07_Evidence/Dashboard_Screenshots/page-4.png",
+      "bytes": 170184,
+      "sha256": "68f1eb98940d540b376f0c019d23bb17dbbbaff3f9e86ddc050b9edbba3f4ee9"
+    },
+    {
+      "path": "07_Evidence/extended_insights.json",
+      "bytes": 11968,
+      "sha256": "9e549dd0b4b3cfaee3eb0fa2760a9ad0465bd4bb1b5d17cad536e33ba6127a10"
+    },
+    {
+      "path": "07_Evidence/validation_results.json",
+      "bytes": 102720,
+      "sha256": "530bbb8bbe7a9349922a40ca9fe0850368c64c2b7b00ca04d8187a49062d1abe"
+    },
+    {
+      "path": "08_Source/Assignment_Brief.docx",
+      "bytes": 26435,
+      "sha256": "b359de425fb28a722656564bd98cf0be6e562ff8dab78342b8925f0f86bb95f5"
+    },
+    {
+      "path": "08_Source/ConsumerComplaints_DataDictionary.csv",
+      "bytes": 1267,
+      "sha256": "4afa1fe971a9f126cd6a1fd28df7985c5a9e99d69df84603d76d287ab13ab393"
+    },
+    {
+      "path": "08_Source/Consumer_Complaints_original.xlsx",
+      "bytes": 3946922,
+      "sha256": "fcd270456eb9363482da7136cf7915a4ed21ff705f31eff995a0807b85b5e5f6"
+    },
+    {
+      "path": "08_Source/Reference_Guide.docx",
+      "bytes": 59552,
+      "sha256": "77e91f1bbd2696d8b5b512aac9252afdb29ff9743fd53a241aae3738d9368f4a"
+    }
+  ]
+}

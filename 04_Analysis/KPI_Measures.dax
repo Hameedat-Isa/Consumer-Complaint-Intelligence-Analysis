@@ -1,0 +1,53 @@
+-- POWER BI DAX — enter EACH measure separately (Modeling > New measure).
+-- Table name: Complaints; sourced using PowerBI_M_Cleaning.pq.
+-- Source data are unique by Complaint ID and preserve timeliness blanks.
+
+-- 1. Unique complaint count (used by all grouped product, year, month, issue, sub-product, sub-issue visuals)
+Total Complaints = DISTINCTCOUNT('Complaints'[Complaint ID])
+
+-- 2. Yes/No timeliness (do not convert blank to No)
+Timely Yes = COALESCE(CALCULATE([Total Complaints], 'Complaints'[Timely response?] = "Yes"), 0)
+Timely No = COALESCE(CALCULATE([Total Complaints], 'Complaints'[Timely response?] = "No"), 0)
+Valid Timeliness Records = [Timely Yes] + [Timely No]
+Recorded Timely Response % = DIVIDE([Timely Yes], [Valid Timeliness Records])
+Excluded Timeliness Records = [Total Complaints] - [Valid Timeliness Records]
+
+-- 3. In progress and response classification
+In Progress = COALESCE(CALCULATE([Total Complaints], 'Complaints'[Company response to consumer] = "In progress"), 0)
+Closed With Explanation = COALESCE(CALCULATE([Total Complaints], 'Complaints'[Company response to consumer] = "Closed with explanation"), 0)
+
+-- 4. CFPB forwarding: 'Date received' means CFPB forwarded to company
+Average Forwarding Days = AVERAGE('Complaints'[Forwarding Days])
+Median Forwarding Days = MEDIAN('Complaints'[Forwarding Days])
+Max Forwarding Days = MAX('Complaints'[Forwarding Days])
+Forwarding More Than 25 Days = COALESCE(CALCULATE([Total Complaints], 'Complaints'[Forwarding Days] > 25), 0)
+Same Day Forwarded = COALESCE(CALCULATE([Total Complaints], 'Complaints'[Forwarding Days] = 0), 0)
+
+-- 5. Product share: retain other slicers (year etc.) but remove Product from denominator
+Product Share % = DIVIDE([Total Complaints], CALCULATE([Total Complaints], REMOVEFILTERS('Complaints'[Product])))
+
+-- 6. Annual YOY — place on a Year visual, not on a Month Start chart.
+-- 2017/2023 incomplete; 2018 not compared against partial 2017.
+Previous Full Year Complaints =
+VAR SelectedYear = SELECTEDVALUE('Complaints'[Year])
+RETURN
+    IF(SelectedYear >= 2019 && SelectedYear <= 2022,
+        CALCULATE([Total Complaints],
+            REMOVEFILTERS('Complaints'[Year]),
+            'Complaints'[Year] = SelectedYear - 1),
+        BLANK())
+
+Full Year YoY % =
+VAR SelectedYear = SELECTEDVALUE('Complaints'[Year])
+RETURN
+    IF(SelectedYear >= 2019 && SelectedYear <= 2022,
+        DIVIDE([Total Complaints] - [Previous Full Year Complaints], [Previous Full Year Complaints]),
+        BLANK())
+
+-- 7. Optional ranked issue/product visuals: use Total Complaints with Product, Sub-product,
+-- Issue, Sub-issue as row/category, and suitable Top N filter.
+-- 8. Period/month grouping: place Month Start on the X-axis and Total Complaints as values.
+-- 9. Product-issue matrix: Product columns, Issue rows, Total Complaints values.
+-- 10. Timeliness donut: filter legend Timely response? explicitly to only Yes/No.
+-- 11. Public-response table: keep (Blank) as a distinct visible category.
+-- Format *% measures as Percent (2 decimals); *Days measures as decimal days.
